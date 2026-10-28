@@ -15,3 +15,4 @@
 # OAuth / Credentials cache (if any)
 .httr-oauth
 .Renviron
+
