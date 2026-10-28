@@ -10,13 +10,14 @@ echo                 🚀 GITHUB REPOSITORY UPLOAD WIZARD
 echo ==============================================================================
 echo.
 
-set /p REPO_URL="Aapki GitHub Repository ka URL enter karein (e.g., https://github.com/username/repo.git): "
+set DEFAULT_URL=https://github.com/rt566989-design/Sales-Data-Analysis-R-Project.git
+
+echo Target Repository: %DEFAULT_URL%
+echo.
+set /p REPO_URL="Enter dabayein isi URL par upload karne ke liye (ya naya URL daalein): "
 
 if "%REPO_URL%"=="" (
-    color 0C
-    echo [ERROR] Repository URL khali nahi ho sakta!
-    pause
-    exit /b 1
+    set REPO_URL=%DEFAULT_URL%
 )
 
 echo.
@@ -38,9 +39,9 @@ if %ERRORLEVEL% EQU 0 (
 ) else (
     color 0C
     echo.
-    echo [ERROR] Push fail ho gaya. Kripya check karein ki repository exist karti hai
-    echo aur aapka GitHub login/credentials sahi hain.
+    echo [NOTE] Agar push fail hua, to check karein ki aapne GitHub par
+    echo "Sales-Data-Analysis-R-Project" repo create kar li hai:
+    echo 👉 https://github.com/new?name=Sales-Data-Analysis-R-Project
 )
 
 pause
-
