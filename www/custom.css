@@ -1,0 +1,181 @@
+/* ==========================================================================
+   Custom CSS for Sales Data Analysis Dashboard
+   ========================================================================== */
+
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #3b82f6;
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --danger-color: #ef4444;
+  --bg-subtle: #f8fafc;
+  --border-color: #e2e8f0;
+}
+
+body {
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+/* Navbar styling */
+.navbar {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  font-weight: 500;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.5px;
+}
+
+/* Card aesthetics */
+.card {
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  margin-bottom: 20px;
+  background: #ffffff;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.card-header {
+  background-color: transparent;
+  border-bottom: 1px solid var(--border-color);
+  font-weight: 600;
+  color: #334155;
+  padding: 12px 18px;
+}
+
+/* KPI Value Box */
+.kpi-card {
+  padding: 18px;
+  border-radius: 12px;
+  color: white;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.kpi-title {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.88;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.kpi-value {
+  font-size: 1.85rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.kpi-subtitle {
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+.kpi-blue {
+  background: linear-gradient(135deg, #1d4ed8 0%, #3b82f6 100%);
+}
+
+.kpi-green {
+  background: linear-gradient(135deg, #047857 0%, #10b981 100%);
+}
+
+.kpi-purple {
+  background: linear-gradient(135deg, #6d28d9 0%, #8b5cf6 100%);
+}
+
+.kpi-amber {
+  background: linear-gradient(135deg, #b45309 0%, #f59e0b 100%);
+}
+
+.kpi-teal {
+  background: linear-gradient(135deg, #0e7490 0%, #06b6d4 100%);
+}
+
+/* Sidebar styling */
+.bslib-sidebar-layout > .sidebar {
+  background-color: #ffffff;
+  border-right: 1px solid var(--border-color);
+  padding: 18px;
+}
+
+.sidebar h5 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #475569;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 8px;
+}
+
+/* Modern buttons */
+.btn-primary {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+.btn-outline-secondary {
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* DT Table tweaks */
+table.dataTable thead th {
+  background-color: #f8fafc;
+  color: #334155;
+  font-weight: 600;
+  border-bottom: 2px solid #cbd5e1;
+}
+
+/* Simulation Output Box */
+.sim-metric-box {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 14px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.sim-metric-val {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.positive {
+  color: #10b981;
+}
+
+.negative {
+  color: #ef4444;
+}
+
+/* Info Box / Callout */
+.info-callout {
+  border-left: 4px solid var(--primary-color);
+  background-color: #eff6ff;
+  padding: 14px 18px;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 18px;
+}
+
